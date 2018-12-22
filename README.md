@@ -1,7 +1,8 @@
 # GRU-Time-Series
 GRU Neural Network Models for Market Movement Prediction
-The first model is a time series MV regression model which takes a split of 80%/10%/10% training, validiation, and testing set and the second model is a MV binary classifier. 
+The first model is a time series MV regression model which takes a split of 80%/10%/10% training, validiation, and testing set and the second model is a MV binary classifier. GRU's have been shown to perform better than LSTM cells with when there is not much data available, thus I wanted to see if it made a difference. 
 I had less than wonderful results with the MV regression model, however the binary classifier was fairly good for predicting exact values of daily returns, but gives satisfactory results when used to predict the direction of the movement.
+I ambiguously chose APPL for the financial time series, however the actual selection does not matter as much. 
 
 The results of the MV regresion model were meausured by taking the MSE of the training data and the results with the MV binary classifier were measured by taking the F1 Score. 
 
