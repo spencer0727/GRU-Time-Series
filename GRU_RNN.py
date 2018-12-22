@@ -14,7 +14,7 @@ valid_set_size_percentage = 10
 test_set_size_percentage = 10 
 
 #Defining the dataframe 
-df = pd.read_csv("Appsto_close.csv", index_col = 0)
+df = pd.read_csv("", index_col = 0)
 
 #Checking the distribution and features of the data
 df.describe()
