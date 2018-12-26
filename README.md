@@ -1,4 +1,4 @@
-# GRU-Time-Series
+# GRU-Time-Series Description & Prediction
 
 # Instructions to run
 The following dependencies are listed at the bottom. Must first intialize a TF environment in order to use TF. 
@@ -25,7 +25,7 @@ The classifier is currently a work in progress as I will still need to fit the s
 The results of the MV regresion model were meausured by taking the MSE of the training data and the results with the MV binary classifier were measured by taking the F1 Score. 
 
 # Dependencies
-Python == 3.7
+>  * Python == 3.7
 numpy==1.14.2 
 pandas==0.22.0 
 plotly==2.5.0 
