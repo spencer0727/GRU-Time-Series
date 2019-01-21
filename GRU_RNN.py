@@ -19,7 +19,9 @@ df = pd.read_csv("", index_col = 0)
 #Checking the distribution and features of the data
 df.describe()
 
-'''Normalizing the data, I used the MiniMax Scaler, shrinks the range such that the range is now between 0 and 1 (or -1 to 1 if there are negative values).
+'''Normalization of the data may in some instances sacrifice the accuracy of the training data in order to better generalize the testing data.
+There are a few different methods which can be used, in instances where the robustness of the data is needed I will use the MinMaxScaler.
+Normalizing the data, I used the MiniMax Scaler, shrinks the range such that the range is now between 0 and 1 (or -1 to 1 if there are negative values).
 This scaler works better for cases in which the standard scaler might not work so well. If the distribution is not Gaussian or the standard deviation is very small, the min-max scaler works better.
 However, it is sensitive to outliers, so if there are outliers in the data, you might want to consider the Robust Scaler below.'''
 
@@ -92,8 +94,10 @@ def get_next_batch(batch_size):
     end = index_in_epoch
     return x_train[perm_array[start:end]], y_train[perm_array[start:end]]
  
+'''Hyperparameter optimization is among the most important properties of the model, I intend to implement bayesian optimization when I 
+produce the model in the instance of publication.'''
 
-#Setting the hyperparameter options 
+#Setting the hyperparameter options
 n_steps = seq_len-1 
 n_inputs = 1 
 n_neurons = 200 
