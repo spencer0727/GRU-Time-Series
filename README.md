@@ -4,7 +4,7 @@
 The following dependencies are listed at the bottom. Must first intialize a TF environment in order to use TF. 
 Please see https://www.tensorflow.org/install/gpu for help with TF installation.
 
-
+# Please read GRU time series for more detailed description
 
 
 # GRU Neural Network Models for Market Movement Prediction
