@@ -94,8 +94,6 @@ def get_next_batch(batch_size):
     end = index_in_epoch
     return x_train[perm_array[start:end]], y_train[perm_array[start:end]]
  
-'''Hyperparameter optimization is among the most important properties of the model, I intend to implement bayesian optimization when I 
-produce the model in the instance of publication.'''
 
 #Setting the hyperparameter options
 n_steps = seq_len-1 
