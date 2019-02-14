@@ -3,13 +3,12 @@
 # Instructions to run
 The following dependencies are listed at the bottom. Must first intialize a TF environment in order to use TF. 
 Please see https://www.tensorflow.org/install/gpu for help with TF installation.
-
-# Please read GRU time series for more detailed description
+Please read GRU time series for more detailed description
 
 
 # GRU Neural Network Models for Market Movement Prediction
 
-This is my first attempt for my masters thesis as of (12/26/2018) the full thesis shall be published circa June 2018 
+This is my first attempt for my masters the full thesis shall be published circa June 2018 
 
 # Introduction
 The first model is a time series MV regression model which takes a split of 80%/10%/10% training, validiation, and testing set and the second model is a MV binary classifier. GRU's have been shown to perform better than LSTM cells with when there is not much data available, thus I wanted to see if it made a difference. The validation set was used in order to ensure the model did not overfit the data before testing the model. 
